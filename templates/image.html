@@ -1,0 +1,16 @@
+<html>
+<title>plots</title>
+<body>
+<form method='post'>
+    {% comment %} {{ data }} {% endcomment %}
+    {% comment %} <img src="data:image/png;base64,{{ data|safe}}" alt="",height="250",width="250"> {% endcomment %}
+    {% comment %} <img src="data:image/png;base64,{{ data|safe }}",alt='now',height='500',width='500'> {% endcomment %}
+    {% comment %} <img src="data:image/png;base64,{{ data|safe }}" alt="" width="1000" height="600"> {% endcomment %}
+
+    <div class='section'>
+    <div class='flex column plot mt15 mlr15 justify-left align-left'>
+      <img src="html:image/png;base64,{{ html|safe }}" alt="" width="1000" height="600"/>
+    </div>
+</form>
+</body>
+</html>

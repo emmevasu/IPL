@@ -1,0 +1,15 @@
+<html>
+<title>plots</title>
+<body>
+<form method='post'>
+    {% csrf_token %}
+    {% for i,j in data %}
+        {{ i }}  :  {{ j}}<br>
+
+    {% endfor %}
+    {% comment %} {% for j in data1 %}
+        {{ j }}
+
+    {% endfor %} {% endcomment %}
+</body>
+</html>
